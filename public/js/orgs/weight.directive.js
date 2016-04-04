@@ -16,8 +16,10 @@
         org:"="
       },
       link: function(scope){
-        scope.update = function(){
-          console.log(scope.org.weight);
+        scope.update = function(weight){
+          console.log(weight);
+          scope.org.weight.push(weight);
+          scope.org.personCount++
           scope.org.$update({id:scope.org._id},function(response){
             console.log(response);
           });

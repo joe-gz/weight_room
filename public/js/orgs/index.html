@@ -3,7 +3,7 @@
 <div data-org-form data-org="OrgIndexViewModel.newOrg"></div>
 
 <div data-ng-repeat="org in OrgIndexViewModel.orgs">
-    <p><a data-ui-sref="orgShow({id: org._id})">Name: {{org.title}}</a></p>
+    <p class="org_title"><a data-ui-sref="orgShow({id: org._id})">Name: {{org.title}}</a></p>
     <p>Total People: {{org.personCount}}</p>
-    <div data-weight-form data-org="OrgIndexViewModel.org"></div>
+    <div data-weight-form data-org="org"></div>
   </div>

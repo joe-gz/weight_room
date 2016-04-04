@@ -1,5 +1,5 @@
 <form id="search">
-  <input type="search" name="keyword" id="keyword" data-ng-model = "org.title"/>
+  <input type="search" placeholder = "Search or add new..." name="keyword" id="keyword" data-ng-model = "org.title"/>
     <button type='button' class = "search" data-ng-if="!org._id" ng-click = create()>Create</button>
   <div data-ng-if="org._id">
     <button type='button' class = "search" ng-click = update()>Update</button>

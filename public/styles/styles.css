@@ -32,3 +32,11 @@ img {
   width: 350px;
   transition: 1s;
 }
+
+p {
+  margin: 0;
+}
+
+.org_title {
+  margin-top: 2%;
+}
