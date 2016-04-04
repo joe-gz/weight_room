@@ -1,9 +1,10 @@
 <h2>New orgs</h2>
 
 <div data-org-form data-org="OrgIndexViewModel.newOrg"></div>
+<bar-chart chart-data="OrgIndexViewModel.weights" ng-if="OrgIndexViewModel.contentDone"></bar-chart>
 
 <div data-ng-repeat="org in OrgIndexViewModel.orgs">
-    <p class="org_title"><a data-ui-sref="orgShow({id: org._id})">Name: {{org.title}}</a></p>
-    <p>Total People: {{org.personCount}}</p>
-    <div data-weight-form data-org="org"></div>
-  </div>
+  <p class="org_title"><a data-ui-sref="orgShow({id: org._id})">Name: {{org.title}}</a></p>
+  <p>Total People: {{org.personCount}}</p>
+  <div data-weight-form data-org="org"></div>
+</div>

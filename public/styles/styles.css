@@ -10,27 +10,8 @@ body {
 form {
   position: fixed;
   left: 10%;
-  top: 100px;
+  top: 20%;
   width: 30%;
-}
-
-form h1 {
-  font-size: 30px;
-}
-
-img {
-  display: block;
-  margin: 50px auto;
-  vertical-align: middle;
-  height: 200px;
-  width: 200px;
-  transition: 1s;
-}
-
-.big {
-  height: 350px;
-  width: 350px;
-  transition: 1s;
 }
 
 p {
@@ -39,4 +20,18 @@ p {
 
 .org_title {
   margin-top: 2%;
+}
+
+.bar {
+  width: 0;
+  transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  font: 10px sans-serif;
+  // background-color: steelblue;
+  text-align: right;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }

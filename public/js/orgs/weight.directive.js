@@ -18,7 +18,7 @@
       link: function(scope){
         scope.update = function(weight){
           console.log(weight);
-          scope.org.weight.push(weight);
+          scope.org.weight.push(parseInt(weight));
           scope.org.personCount++
           scope.org.$update({id:scope.org._id},function(response){
             console.log(response);
