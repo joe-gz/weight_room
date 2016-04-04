@@ -1,11 +1,15 @@
 "use strict";
 
-angular.module("orgs").controller("OrgIndexController", function (
-  $scope
-  // ,
-  // OrgFactory
-){
+(function(){
+  angular
+  .module("orgs")
+  .controller("OrgIndexController", [
+    "OrgFactory",
+    OrgIndexControllerFunction
+  ]);
 
-  console.log('controller');
-
-});
+  function OrgIndexControllerFunction(OrgFactory){
+    this.orgs = OrgFactory.query();
+    this.newOrg = new OrgFactory();
+  }
+}());
